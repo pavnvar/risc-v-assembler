@@ -16,6 +16,8 @@ def find_free_register(register_status):
 def get_register_address(register, register_mapping, register_status_list):
     if('x0' in register):
         reg_address = 0
+    elif('zero' in register):
+        reg_address = 0
     elif register in register_mapping:
         reg_address = register_mapping[register]
     else:

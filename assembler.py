@@ -47,3 +47,4 @@ if __name__ == "__main__":
         hex_encoded_instructions.append(instruction_data.instruction_details.hex_encoded_insrtuction)
     for instruction in hex_encoded_instructions:
         print(instruction)
+    print(register_mapping)

@@ -131,7 +131,7 @@ class B_type:
         return (immediate_value[0:7], immediate_value[7:12])
 
     def _get_registers(self):
-        source_register_1 = self.instruction.split(',')[0].strip()
+        source_register_1 = self.instruction.split(',')[0].split(" ")[-1]
         source_register_2 = self.instruction.split(',')[1].split(" ")[-1]
         register_status_list = self.instruction_common_properties.register_status_list
         register_mapping = self.instruction_common_properties.register_mapping
